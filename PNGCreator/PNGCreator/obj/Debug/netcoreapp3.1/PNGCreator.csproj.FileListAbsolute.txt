@@ -1,0 +1,15 @@
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\bin\Debug\netcoreapp3.1\PNGCreator.exe
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\bin\Debug\netcoreapp3.1\PNGCreator.deps.json
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\bin\Debug\netcoreapp3.1\PNGCreator.runtimeconfig.json
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\bin\Debug\netcoreapp3.1\PNGCreator.runtimeconfig.dev.json
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\bin\Debug\netcoreapp3.1\PNGCreator.dll
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\bin\Debug\netcoreapp3.1\PNGCreator.pdb
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\obj\Debug\netcoreapp3.1\PNGCreator.csprojAssemblyReference.cache
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\obj\Debug\netcoreapp3.1\PNGCreator.csproj.CoreCompileInputs.cache
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\obj\Debug\netcoreapp3.1\PNGCreator.AssemblyInfoInputs.cache
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\obj\Debug\netcoreapp3.1\PNGCreator.AssemblyInfo.cs
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\obj\Debug\netcoreapp3.1\PNGCreator.dll
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\obj\Debug\netcoreapp3.1\PNGCreator.pdb
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\obj\Debug\netcoreapp3.1\PNGCreator.genruntimeconfig.cache
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\obj\Debug\netcoreapp3.1\PNGCreator.BackgroundForm.resources
+C:\Users\Christer\source\repos\PNGCreator\PNGCreator\obj\Debug\netcoreapp3.1\PNGCreator.csproj.GenerateResource.cache
