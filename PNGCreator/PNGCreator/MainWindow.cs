@@ -68,12 +68,12 @@ namespace PNGCreator
 			if (iPad1_cb.Checked) convertTasks.Add( Task.Run(() => ConvertBatch(toPath, 2732, 2048, false, iPad1_cb.Text)));
 			if (iPad2_cb.Checked) convertTasks.Add( Task.Run(() => ConvertBatch(toPath, 2732, 2048, false, iPad2_cb.Text)));
 			*/
-			if (iPhone1_cb.Checked) convertTasks.Add( ConvertBatch(toPath, 2688, 1424, crop_cb.Checked, iPhone1_cb.Text));
-			if (iPhone2_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 2436, 1125, crop_cb.Checked, iPhone2_cb.Text));
+			if (iPhone1_cb.Checked) convertTasks.Add( ConvertBatch(toPath, 2688, 1242, crop_cb.Checked, iPhone1_cb.Text));
+			if (iPhone2_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 2208, 1242, crop_cb.Checked, iPhone2_cb.Text));
 			if (iPad1_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 2732, 2048, crop_cb.Checked, iPad1_cb.Text));
 
-			if (iPhone1_p_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 1424, 2688, crop_cb.Checked, iPhone1_p_cb.Text));
-			if (iPhone2_p_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 1125, 2436, crop_cb.Checked, iPhone2_p_cb.Text));
+			if (iPhone1_p_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 1242, 2688, crop_cb.Checked, iPhone1_p_cb.Text));
+			if (iPhone2_p_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 1242, 2208, crop_cb.Checked, iPhone2_p_cb.Text));
 			if (iPad1_p_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 2048, 2732, crop_cb.Checked, iPad1_p_cb.Text));
 
 			if (android1_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 1024, 500, crop_cb.Checked, android1_cb.Text, true));

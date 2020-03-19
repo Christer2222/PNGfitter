@@ -51,7 +51,7 @@
 			this.iPhone1_cb.Name = "iPhone1_cb";
 			this.iPhone1_cb.Size = new System.Drawing.Size(223, 30);
 			this.iPhone1_cb.TabIndex = 0;
-			this.iPhone1_cb.Text = "iPhone 2688 x 1242 pixels (landscape)";
+			this.iPhone1_cb.Text = "iPhone 2688 x 1242 pixels (landscape 6,5\")";
 			this.iPhone1_cb.UseVisualStyleBackColor = true;
 			// 
 			// iPhone2_cb
@@ -63,7 +63,7 @@
 			this.iPhone2_cb.Name = "iPhone2_cb";
 			this.iPhone2_cb.Size = new System.Drawing.Size(223, 30);
 			this.iPhone2_cb.TabIndex = 2;
-			this.iPhone2_cb.Text = "iPhone 2436 x 1125 pixels (landscape)";
+			this.iPhone2_cb.Text = "iPhone 2208 x 1242 pixels (landscape 5,5\")";
 			this.iPhone2_cb.UseVisualStyleBackColor = true;
 			// 
 			// iPad1_cb
@@ -75,7 +75,7 @@
 			this.iPad1_cb.Name = "iPad1_cb";
 			this.iPad1_cb.Size = new System.Drawing.Size(209, 30);
 			this.iPad1_cb.TabIndex = 4;
-			this.iPad1_cb.Text = "iPad 2732 x 2048 pixels (landscape)";
+			this.iPad1_cb.Text = "iPad 2732 x 2048 pixels (landscape 12,9\")";
 			this.iPad1_cb.UseVisualStyleBackColor = true;
 			// 
 			// android1_cb
@@ -132,7 +132,7 @@
 			this.iPhone1_p_cb.Name = "iPhone1_p_cb";
 			this.iPhone1_p_cb.Size = new System.Drawing.Size(209, 30);
 			this.iPhone1_p_cb.TabIndex = 1;
-			this.iPhone1_p_cb.Text = "iPhone 1242 x 2688 pixels (portrait)";
+			this.iPhone1_p_cb.Text = "iPhone 1242 x 2688 pixels (portrait 6,5\")";
 			this.iPhone1_p_cb.UseVisualStyleBackColor = true;
 			// 
 			// iPhone2_p_cb
@@ -144,7 +144,7 @@
 			this.iPhone2_p_cb.Name = "iPhone2_p_cb";
 			this.iPhone2_p_cb.Size = new System.Drawing.Size(209, 30);
 			this.iPhone2_p_cb.TabIndex = 3;
-			this.iPhone2_p_cb.Text = "iPhone 1125 x 2436 pixels (portrait)";
+			this.iPhone2_p_cb.Text = "iPhone 1242 x 2208 pixels (portrait 5,5\")";
 			this.iPhone2_p_cb.UseVisualStyleBackColor = true;
 			// 
 			// iPad1_p_cb
@@ -156,7 +156,7 @@
 			this.iPad1_p_cb.Name = "iPad1_p_cb";
 			this.iPad1_p_cb.Size = new System.Drawing.Size(195, 30);
 			this.iPad1_p_cb.TabIndex = 5;
-			this.iPad1_p_cb.Text = "iPad 2048 x 2732 pixels (portrait)";
+			this.iPad1_p_cb.Text = "iPad 2048 x 2732 pixels (portrait 12,9\")";
 			this.iPad1_p_cb.UseVisualStyleBackColor = true;
 			// 
 			// android1_p_cb

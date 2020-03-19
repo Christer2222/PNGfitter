@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Christer\\source\\repos\\PNGCreator\\PNGCreator\\PNGCreator.csproj": {}
+    "D:\\GitRepos\\PNGfitter\\PNGCreator\\PNGCreator\\PNGCreator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Christer\\source\\repos\\PNGCreator\\PNGCreator\\PNGCreator.csproj": {
-      "version": "1.0.0",
+    "D:\\GitRepos\\PNGfitter\\PNGCreator\\PNGCreator\\PNGCreator.csproj": {
+      "version": "1.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Christer\\source\\repos\\PNGCreator\\PNGCreator\\PNGCreator.csproj",
+        "projectUniqueName": "D:\\GitRepos\\PNGfitter\\PNGCreator\\PNGCreator\\PNGCreator.csproj",
         "projectName": "PNGCreator",
-        "projectPath": "C:\\Users\\Christer\\source\\repos\\PNGCreator\\PNGCreator\\PNGCreator.csproj",
+        "projectPath": "D:\\GitRepos\\PNGfitter\\PNGCreator\\PNGCreator\\PNGCreator.csproj",
         "packagesPath": "C:\\Users\\Christer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Christer\\source\\repos\\PNGCreator\\PNGCreator\\obj\\publish\\win-x86\\",
+        "outputPath": "D:\\GitRepos\\PNGfitter\\PNGCreator\\PNGCreator\\obj\\publish\\win-x86\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
