@@ -30,3 +30,8 @@ D:\GitRepos\PNGfitter\PNGCreator\PNGCreator\obj\Release\netcoreapp3.1\PNGCreator
 D:\GitRepos\PNGfitter\PNGCreator\PNGCreator\obj\Release\netcoreapp3.1\PNGCreator.AssemblyInfo.cs
 D:\GitRepos\PNGfitter\PNGCreator\PNGCreator\obj\Release\netcoreapp3.1\PNGCreator.dll
 D:\GitRepos\PNGfitter\PNGCreator\PNGCreator\obj\Release\netcoreapp3.1\PNGCreator.genruntimeconfig.cache
+D:\GitRepos\PNGfitter\PNGCreator\PNGCreator\builds\netcoreapp3.1\PNGCreator.exe
+D:\GitRepos\PNGfitter\PNGCreator\PNGCreator\builds\netcoreapp3.1\PNGCreator.deps.json
+D:\GitRepos\PNGfitter\PNGCreator\PNGCreator\builds\netcoreapp3.1\PNGCreator.runtimeconfig.json
+D:\GitRepos\PNGfitter\PNGCreator\PNGCreator\builds\netcoreapp3.1\PNGCreator.runtimeconfig.dev.json
+D:\GitRepos\PNGfitter\PNGCreator\PNGCreator\builds\netcoreapp3.1\PNGCreator.dll

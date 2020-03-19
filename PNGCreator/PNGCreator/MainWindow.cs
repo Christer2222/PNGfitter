@@ -68,19 +68,19 @@ namespace PNGCreator
 			if (iPad1_cb.Checked) convertTasks.Add( Task.Run(() => ConvertBatch(toPath, 2732, 2048, false, iPad1_cb.Text)));
 			if (iPad2_cb.Checked) convertTasks.Add( Task.Run(() => ConvertBatch(toPath, 2732, 2048, false, iPad2_cb.Text)));
 			*/
-			if (iPhone1_cb.Checked) convertTasks.Add( ConvertBatch(toPath, 2688, 1242, crop_cb.Checked, iPhone1_cb.Text));
-			if (iPhone2_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 2208, 1242, crop_cb.Checked, iPhone2_cb.Text));
-			if (iPad1_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 2732, 2048, crop_cb.Checked, iPad1_cb.Text));
+			if (iPhone1_cb.Checked) convertTasks.Add( ConvertBatch(toPath, 2688, 1242, crop_cb.Checked, iPhone1_cb.Text, true));
+			if (iPhone2_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 2208, 1242, crop_cb.Checked, iPhone2_cb.Text, true));
+			if (iPad1_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 2732, 2048, crop_cb.Checked, iPad1_cb.Text, true));
 
-			if (iPhone1_p_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 1242, 2688, crop_cb.Checked, iPhone1_p_cb.Text));
-			if (iPhone2_p_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 1242, 2208, crop_cb.Checked, iPhone2_p_cb.Text));
-			if (iPad1_p_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 2048, 2732, crop_cb.Checked, iPad1_p_cb.Text));
+			if (iPhone1_p_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 1242, 2688, crop_cb.Checked, iPhone1_p_cb.Text, true));
+			if (iPhone2_p_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 1242, 2208, crop_cb.Checked, iPhone2_p_cb.Text, true));
+			if (iPad1_p_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 2048, 2732, crop_cb.Checked, iPad1_p_cb.Text, true));
 
 			if (android1_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 1024, 500, crop_cb.Checked, android1_cb.Text, true));
 			if (android1_p_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 500, 1024, crop_cb.Checked, android1_p_cb.Text, true));
-			if (android2_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 4096, 2304, crop_cb.Checked, android2_cb.Text));
+			if (android2_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 4096, 2304, crop_cb.Checked, android2_cb.Text, true));
 
-			if (android3_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 512, 512, crop_cb.Checked, android3_cb.Text));
+			if (android3_cb.Checked) convertTasks.Add(ConvertBatch(toPath, 512, 512, crop_cb.Checked, android3_cb.Text, true));
 
 			//foreach (var v in convertTasks) v.Start();
 			//Task.WaitAll(convertTasks.ToArray());
@@ -100,16 +100,28 @@ namespace PNGCreator
 
 			crop = true;
 
+			finalName = finalName.Replace("\"","in");
+			foreach (char c in Path.GetInvalidFileNameChars())
+				finalName = finalName.Replace(c.ToString(), string.Empty);
+
 			for (int i = 0; i < tasksHere; i++)
 			{
 				if (crop)
 				{
 					//Method 1, crop
-					using (FileStream fromStream = new FileStream(Directory.GetFiles(fromPath)[i], FileMode.Open))
+					try
 					{
-						fromImage = new Bitmap(Image.FromStream(fromStream), new Size(targetWidth, targetHeight));
+						using (FileStream fromStream = new FileStream(Directory.GetFiles(fromPath)[i], FileMode.Open))
+						{
+							fromImage = new Bitmap(Image.FromStream(fromStream), new Size(targetWidth, targetHeight));
+						}
+
+						fromImage.Save($"{toPath}{finalName}_{i}.png", (removeAlpha) ? System.Drawing.Imaging.ImageFormat.Jpeg : System.Drawing.Imaging.ImageFormat.Png); 
 					}
-					fromImage.Save($"{toPath}{finalName}_{i}.png", (removeAlpha)? System.Drawing.Imaging.ImageFormat.Jpeg: System.Drawing.Imaging.ImageFormat.Png);
+					catch (Exception e)
+					{
+						Text = e.Message; 
+					}
 				}
 				else
 				{
@@ -147,6 +159,8 @@ namespace PNGCreator
 				Text = $"{appName} ({Percent.ToString("##0")}%)";
 				await Task.Delay(10);
 			}
+
+			
 
 			fromImage = null;
 			newImage = null;
