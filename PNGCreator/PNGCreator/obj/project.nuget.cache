@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hHcpi1a6MdZ+BYunJmGaKoj0Sp/kStW+9gNZ9DWiPElhRaTUJzBhnaYt+9Eq9DKZmsdqZAS6xrAPfce3SRm11g==",
+  "dgSpecHash": "pDaw5AotqKiXhKk7nuPpjAAG8CyC3oylSDb0rTZ1I+VQoHKvYt9SkOAyrP+AgqOpv1khPANcUGU/lmw6bC0fJQ==",
   "success": true,
   "projectFilePath": "D:\\GitRepos\\PNGfitter\\PNGCreator\\PNGCreator\\PNGCreator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Christer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }
